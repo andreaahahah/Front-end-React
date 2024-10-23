@@ -1,0 +1,278 @@
+/* Reset di base e stili generali */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background-color: #991b1b;
+  color: white;
+  padding: 2rem 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.site-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: serif;
+  letter-spacing: 0.05em;
+  flex-grow: 1;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+
+@media (max-width: 767px) {
+  .header-content {
+    padding: 0 1rem;
+  }
+}
+
+.modern-input {
+  width: 200px;
+  padding: 7px 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: white;
+  outline: none;
+  font-size: 14px;
+
+}
+
+
+
+nav {
+  display: none;
+}
+
+nav.desktop-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.125rem;
+  margin: 0 1rem;
+}
+
+nav a:hover {
+  color: #e5e7eb;
+}
+
+/* Main content */
+main {
+  padding: 2rem 0;
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  font-family: serif;
+  padding: 3rem;
+}
+
+
+.categories {
+  margin-bottom: 3rem;
+}
+
+.categories-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  max-width: 48rem;
+}
+
+.categories-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.category-item {
+  flex-shrink: 0;
+  width: 6rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-right: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.category-item img {
+  width: 100%;
+  height: 6rem;
+  object-fit: cover;
+}
+
+.category-item h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.scroll-button {
+  background-color: #991b1b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: #7f1d1d;
+}
+
+
+/* Footer */
+footer {
+  background-color: #e5e7eb;
+  color: #4b5563;
+  padding: 2rem 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: serif;
+}
+
+.footer-section ul {
+  list-style-type: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #991b1b;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter-form input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-right: none;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.newsletter-form button {
+  background-color: #991b1b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #7f1d1d;
+}
+
+.copyright {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+  .site-title {
+    font-size: 3.2rem;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  nav.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #991b1b;
+    padding: 1rem;
+  }
+
+  nav.mobile-nav a {
+    margin: 0.5rem 0;
+  }
+}

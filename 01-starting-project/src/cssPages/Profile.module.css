@@ -1,0 +1,68 @@
+.buttons-container {
+  display: flex;
+  justify-content: center; /* Centra i bottoni orizzontalmente */
+  align-items: center; /* Centra i bottoni verticalmente */
+  position: absolute;
+  bottom: 30px;
+  left: 0; /* Posiziona il contenitore a sinistra */
+  right: 0; /* Posiziona il contenitore a destra */
+  width: 100%; /* Il contenitore occupa tutta la larghezza disponibile */
+}
+.login-btn {
+  width: 30%; /* Aumenta leggermente la larghezza dei bottoni */
+  margin: 0 10px; /* Aggiunge spazio tra i bottoni */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem; /* Aggiunge un po' di padding */
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+.register-btn {
+  width: 30%; /* Aumenta leggermente la larghezza dei bottoni */
+  margin: 0 10px; /* Aggiunge spazio tra i bottoni */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem; /* Aggiunge un po' di padding */
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+/* Stile del pulsante di login */
+.login-btn {
+  background: linear-gradient(135deg, #BF2D4D, #BF3B2B); /* Colori rossi scuri */
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #FF4B2B, #FF416C); /* Cambia al passaggio del mouse */
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile del pulsante di registrazione */
+.register-btn {
+  background: linear-gradient(135deg, #2D74BF, #2B3BBF); /* Colori blu scuri */
+}
+
+.register-btn:hover {
+  background: linear-gradient(135deg, #4B9BFF, #416CFF); /* Cambia al passaggio del mouse */
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.register-btn:active {
+  transform: translateY(0);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
