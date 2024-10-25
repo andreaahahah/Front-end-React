@@ -1,10 +1,10 @@
 import classes from "./Ricerca.module.css"
 export default function Ricerca({ testo }) {
     const products = [
-        { id: 1, title: "Prodotto 1", image: "./images/ioedome.jpg", description: "Descrizione prodotto 1", price: 10.99 },
-        { id: 2, title: "Prodotto 2", image: "ioeily.jpg", description: "Descrizione prodotto 2", price: 99999.99 },
-        { id: 3, title: "Prodotto 3", image: "ioefra.jpg", description: "Descrizione prodotto 3", price: 159.49 },
-        { id: 4, title: "Prodotto 4", image: "ioecri.jpg", description: "Descrizione prodotto 4", price: 98.99 },
+        { id: 1, title: "Prodotto 1", image: "./images/ioecri.jpg", description: "Descrizione prodotto 1", price: 10.99 },
+        { id: 2, title: "Prodotto 2", image: ".jpg", description: "Descrizione prodotto 2", price: 99999.99 },
+        { id: 3, title: "Prodotto 3", image: ".jpg", description: "Descrizione prodotto 3", price: 159.49 },
+        { id: 4, title: "Prodotto 4", image: ".jpg", description: "Descrizione prodotto 4", price: 98.99 },
         { id: 5, title: "Prodotto 5", image: "path/to/image5.jpg", description: "Descrizione prodotto 5", price: 290.00 },
         { id: 6, title: "Prodotto 6", image: "path/to/image6.jpg", description: "Descrizione prodotto 6", price: 5.99 },
         { id: 7, title: "Prodotto 7", image: "path/to/image7.jpg", description: "Descrizione prodotto 7", price: 7.49 },
