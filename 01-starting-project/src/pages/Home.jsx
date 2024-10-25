@@ -3,11 +3,9 @@ import Categories from "../Components/Categorie";
 function  HomePage(){
     return(
         <>
-            <h2> 
-                home 
-            </h2>
-
-            <Categories/>
+            <div style={{ marginTop: '50px' }}>
+            <Categories style={{ marginTop: '50px' }}/> 
+            </div>
         </>
     )
 

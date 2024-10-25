@@ -177,6 +177,14 @@ h2 {
   background-color: #7f1d1d;
 }
 
+/* index.css */
+.carousel-container {
+  max-width: 80vw; /* Occupa il 90% della larghezza della viewport */
+  width: 100%;
+  min-width: 300px; /* Larghezza minima per evitare layout troppo stretti */
+  margin: 0 auto;
+}
+
 
 /* Footer */
 footer {

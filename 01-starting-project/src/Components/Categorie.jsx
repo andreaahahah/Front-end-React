@@ -163,16 +163,18 @@ export default function CircularDemo() {
     return (
         <div className="card">
             {products.length > 0 ? (
+                <div className="carousel-container"> 
                 <Carousel 
                     value={products} 
                     numVisible={5} 
-                    numScroll={3} 
+                    numScroll={1} 
                     responsiveOptions={responsiveOptions} 
                     className="custom-carousel" 
                     circular 
                     autoplayInterval={3000} 
                     itemTemplate={productTemplate} 
                 />
+                </div>
             ) : (
                 <div className="text-center py-5">
                     <h5>No products available.</h5>

@@ -26,10 +26,11 @@ function RootLayout() {
   return (
     <>
       <header>
+
         <Link to="/" className="custom-link" >
         {isVisible? handleVisibile: undefined}
         <div className="header-content">
-          <h1 className="site-title">STOCK HOUSE</h1>
+          <h1 className="site-title">● STOCK HOUSE ●</h1>
         </div>
         </Link>
         
